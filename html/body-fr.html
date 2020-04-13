@@ -195,8 +195,6 @@ left: -30%;
 { img: 'https://raw.githubusercontent.com/learn-de/de/master/images/body/neck.png', color: '#ccecfb',  word: 'dog',  sound: 'https://raw.githubusercontent.com/learn-de/fr/master/sounds/body/cat_body17',caption:'رقبة (عنق) 🔊' ,caption_Ar:'Le cou 🔊', voice: 'https://raw.githubusercontent.com/learn-de/fr/master/sounds/body/cat_body17',
 'voice_english':'https://raw.githubusercontent.com/learn-de/de/master/sounds/body/ar/cat_body17'},
 
-{ img: 'https://raw.githubusercontent.com/learn-de/de/master/images/body/spine.png', color: '#ccecfb',  word: 'dog',  sound: 'https://raw.githubusercontent.com/learn-de/fr/master/sounds/body/cat_body18',caption:'العامود الفقري 🔊' ,caption_Ar:'Colonne vertébrale 🔊', voice: 'https://raw.githubusercontent.com/learn-de/fr/master/sounds/body/cat_body18',
-'voice_english':'https://raw.githubusercontent.com/learn-de/de/master/sounds/body/ar/cat_body18'},
 
 { img: 'https://raw.githubusercontent.com/learn-de/de/master/images/body/tendon.png', color: '#ccecfb',  word: 'dog',  sound: 'https://raw.githubusercontent.com/learn-de/fr/master/sounds/body/cat_body24',caption:'وتر 🔊' ,caption_Ar:'Le tendon 🔊', voice: 'https://raw.githubusercontent.com/learn-de/fr/master/sounds/body/cat_body24',
 'voice_english':'https://raw.githubusercontent.com/learn-de/de/master/sounds/body/ar/cat_body24'},
@@ -246,8 +244,8 @@ left: -30%;
 
     var index     = 0,
         score     = 0,
-        alphabet  = 'abcdefghijklmnopqrstuvwxyz'.split(''),
-		//alphabet  = 'أإابتةثجحخدذرزسشصضطظعغفقكلمنهوي'.split(''),
+        alphabet  = ''.split(''),
+		//alphabet  = ''.split(''),
         click     = 'ontouchstart' in $html ? 'touchstart' : 'mousedown';
 
     // Buzz & sounds
@@ -256,14 +254,14 @@ left: -30%;
         $warning.style.visibility = 'visible';
     }
 
-    buzz.defaults.formats = [ 'ogg', 'mp3' ];
+    buzz.defaults.formats = ['mp3'];
     buzz.defaults.preload = 'metadata';
 
     var sounds = {
-        win:  new buzz.sound('sounds/win'),
-        fail: new buzz.sound('sounds/fail'),
-        dice: new buzz.sound('sounds/dice'),
-        blup: new buzz.sound('sounds/blup')
+      //  win:  new buzz.sound('sounds/win'),
+      //  fail: new buzz.sound('sounds/fail'),
+      //  dice: new buzz.sound('sounds/dice'),
+      //  blup: new buzz.sound('sounds/blup')
     };
 
     for (var g in games) {

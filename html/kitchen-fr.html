@@ -191,7 +191,7 @@ left: -30%;
     var index     = 0,
         score     = 0,
         //alphabet  = 'abcdefghijklmnopqrstuvwxyz'.split(''),
-		alphabet  = 'أإابتةثجحخدذرزسشصضطظعغفقكلمنهوي'.split(''),
+		alphabet  = ''.split(''),
         click     = 'ontouchstart' in $html ? 'touchstart' : 'mousedown';
 
     // Buzz & sounds
@@ -200,14 +200,14 @@ left: -30%;
         $warning.style.visibility = 'visible';
     }
 
-    buzz.defaults.formats = [ 'ogg', 'mp3' ];
+    buzz.defaults.formats = ['mp3'];
     buzz.defaults.preload = 'metadata';
 
     var sounds = {
-        win:  new buzz.sound('sounds/win'),
-        fail: new buzz.sound('sounds/fail'),
-        dice: new buzz.sound('sounds/dice'),
-        blup: new buzz.sound('sounds/blup')
+       // win:  new buzz.sound('sounds/win'),
+       // fail: new buzz.sound('sounds/fail'),
+       // dice: new buzz.sound('sounds/dice'),
+       // blup: new buzz.sound('sounds/blup')
     };
 
     for (var g in games) {
